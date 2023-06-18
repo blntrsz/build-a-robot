@@ -43,6 +43,11 @@ export default function Home() {
 
             fetch(process.env.NEXT_PUBLIC_API_URL ?? "", {
               method: "POST",
+              headers: {
+                "Access-Control-Allow-Headers": "*",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "*",
+              },
             });
           }}
         >
